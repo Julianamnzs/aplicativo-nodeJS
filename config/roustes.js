@@ -29,8 +29,6 @@ routes.delete('/:id', (req, res) => {
     let newDB =db.filter(item => {
         if(!item[id])
         return item
-
-
     })
 
     db = newDB
